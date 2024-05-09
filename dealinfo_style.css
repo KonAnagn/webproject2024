@@ -1,0 +1,210 @@
+html {
+    font-family: Arial;
+    background-color: rgb(148, 210, 251);
+}
+
+body{
+    margin-left: 8em;
+}
+
+.header{
+    width: 80em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.2em;
+}
+
+#my-reservations{
+    background-color: rgb(244, 111, 35);
+    color:white;
+    height:3em;
+    border-radius: 0.3em;
+    font-size: 1em;
+    border:none;
+}
+
+#logout{
+    height:3em;
+    border-radius: 0.3em;
+    font-size: 1em;
+    border:none;
+
+}
+
+#order-info-container{
+    background-color: rgb(90, 90, 250);
+    width: 67em;
+    height: 3em;
+    padding: 0.2em;
+    padding-top: 0.4em;
+    text-align: center;
+    border-radius:0.5em;
+    font-size:1.2em;
+}
+
+#order-info-container span{
+    font-weight: bold;
+    padding-right: 05em;
+}
+
+#order-container{
+    margin-top: 1em;
+    padding: 1em;
+    width: 79em;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color:rgb(168, 168, 168);
+    border-radius: 1em;
+    background-color: white;
+}
+
+h2{
+    padding-left:1.1em;
+}
+
+#order-info{
+    padding-right:1em;
+    font-size:1.2em;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#columns{
+    width: 57%;
+    align-items: end;
+    display:flex;
+    justify-content: space-between;
+    padding:2em;
+}
+
+#car{
+    height:15em;
+    width:15em;
+    padding-right:3em;
+    padding-left:2em;
+    float:right;
+}
+
+#right-column{
+    height:10em;
+}
+
+#pricetag{
+    font-size:1.3em;
+    padding-bottom: 2em;
+}
+
+#price{
+    font-size:1.3em;
+}
+
+#order-buttons{
+    height: 2em;
+}
+
+.back-button{
+    font-size: 1.1em;
+    padding: 0.4em;
+    border: none;
+    border-radius: 0.2em;
+}
+
+#proceed-button{
+    font-size: 1.1em;
+    padding: 0.4em;
+    margin-left:1em;
+    border: none;
+    border-radius: 0.2em;
+    background-color: rgb(249, 168, 8);
+}
+
+#payment-form{
+    display:none;
+    width: 79em;
+    height:34em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color:rgb(168, 168, 168);
+    border-radius: 1em;
+    background-color: rgb(90, 90, 250);
+}
+
+fieldset{
+    background-color:white ;
+    padding: 1em;
+    box-sizing: border-box;
+    border-radius:0.5em;
+    display:flex;
+    justify-content: start;
+    font-size:1.1em;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+legend{
+    font-weight:bold;
+}
+
+input[type='text']{
+    height: 1.8em;
+    width:18em;
+    font-size: 1.1em;
+    margin-right:1em;
+}
+
+input[type='date']{
+    height: 2.3em;
+    width:12em;
+    font-size: 1.1em;
+    margin-right:2em;
+}
+
+#pay-button{
+    float:right;
+    font-size: 1.1em;
+    padding: 0.4em;
+    border: none;
+    border-radius: 0.2em;
+    background-color: rgb(249, 168, 8);
+}
+
+#terms-window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+
+
+  }
+#window-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

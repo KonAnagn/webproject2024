@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deal</title>
+<link rel="stylesheet" href="dealinfo_style.css">
+<script src="dealinfo_todo.mjs" defer></script>
+</head>
+<body>
+    
+<div class="header">
+    <img src="myIg.png" alt="Logo" id="my-logo">
+    <div class="header-buttons">
+        <button type="button" id="my-reservations">Οι κρατήσεις μου</button>
+
+        <button type="button" id="logout">Αποσύνδεση</button>
+    </div>
+</div>
+
+<div id="order-info-container">
+    <p>Παραλαβη από:  <span id="location">Thessaloniki</span>
+    Ημερομηνία ενοικίασης: <span id="rent-date">12/12/1212</span>
+    Ημερομηνία επιστροφής: <span id="return-date">12/12/1212</span></p>
+</div>
+
+<div id="order-container">
+    <h2>Model</h2>
+    <div id="order-info">
+        <img src="car.png" alt="car" id="car">
+        <div id="columns">
+            <div id="left-column">
+                <p>Τύπος: <span id="vehicle-type">Αυτόματο</span></p>
+                <p>Καύσιμο: <span id="fuel">Ηλεκτρικό</span></p>
+                <p>Θέσεις: <span id="seats">4</span></p>
+                <p>Χώρος αποσκευών: <span id="luggage">4</span></p>
+
+            </div>
+            
+            <div id="right-column">
+                <p id="pricetag">Τιμή: <span id="price">30</span> €</p>
+                <div id="order-buttons">
+                    <button class="back-button">Back</button>
+                    <button id="proceed-button">Proceed</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="payment-form">
+    <h2>Payment info</h2>
+    <br>
+
+    <form>
+        <fieldset id="driver-info">
+            <legend>Στοιχεία οδηγού</legend>
+            <div id="form-left">
+                <label for="fname">Όνομα</label><br>
+                <input type="text" id="fname" name="fname" value="" required><br>
+                <label for="email">Email</label><br>
+                <input type="text" id="email" name="email" value="" required><br>
+                <label for="address">Διεύθυνση</label><br>
+                <input type="text" id="address" name="address" value="" required>
+            </div>
+
+            <div id="form-right">
+                <label for="fname">Επώνυμο</label><br>
+                <input type="text" id="lname" name="lname" value="" required><br>
+                <label for="phone">Τηλέφωνο</label><br>
+                <input type="text" id="phone" name="phone" value="" required><br>
+                <label for="country">Χώρα</label><br>
+                <input type="text" id="country" name="country" value="" required>
+            </div>
+
+            <div id="form-checkboxes">
+            <label><input type="checkbox" name="terms-accept" id="terms-accept">Έχω διαβάσει και κατανοήσει τους <a href="#" id="terms-link">όρους και προϋποθέσεις</a>.</label><br><br>
+            <label><input type="checkbox" name="spam-accept" id="spam-accept">Επιθυμώ να λαμβάνω προωθητικά e-mail, όπως e-mail για προσφορές, επιβραβεύσεις και πληροφορίες σχετικά με τα προϊόντα της υπηρεσίας.</label>
+            </div>
+
+        </fieldset>
+
+        <fieldset id="card-info">
+            <legend>Στοιχεία κάρτας</legend>
+            <div>
+            <label for="card-number">Αριθμός κάρτας</label><br>
+            <input type="text" id="card-number" name="card-number" required>
+            </div>
+            <div>
+            <label for="cvv">CVV</label><br>
+            <input type="text" id="cvv" name="pin" required>
+            </div>
+            <div>
+            <label for="expiration-date">Ημ λήξης</label><br>
+            <input type="date" id="expiration-date" name="expiration-date" required>
+            </div>
+            <br>
+            <label><input type="checkbox" name="save-card-info" id="save-card-info">Save card information</label>
+            
+        </fieldset>
+        <button class="back-button">Cancel</button>
+        <button id="pay-button">Complete payment</button>
+    </form>
+</div>
+
+<div id="terms-window">
+    <div id="window-content">
+      <span class="close">&times;</span>
+      <h2>Terms and Conditions</h2>
+      <p>There are no terms or conditions.</p>
+    </div>
+</div>
+
+
+</body>
+</html>

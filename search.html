@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <title>Search page</title>
+  <link rel="stylesheet" href="search_style.css">
+  <script src="search_todo.mjs" defer></script>
+</head>
+
+<body>
+    
+    <div class="header">
+        <img src="myIg.png" alt="Logo" id="my-logo">
+        <div class="header-buttons">
+            <button type="button" id="my-reservations">Οι κρατήσεις μου</button>
+
+            <button type="button" id="logout">Αποσύνδεση</button>
+        </div>
+    </div>
+
+    <form class="search-form">
+
+        <div class="search-bar">
+
+            <select id="location" name="location" class="search-bar-element" required>
+                <option value="" disabled selected hidden>Location</option>
+                <option value="athens">Athens</option>
+                <option value="thessaloniki">Thessaloniki</option>
+                <option value="patra">Patra</option>
+            </select>
+
+            <input type="date" id="rent-date" name="rent-date" class="search-bar-element" required>
+            <input type="date" id="return-date" name="return-date" class="search-bar-element" required>
+
+            <input type="submit" value="Search" class="search-bar-element">
+
+        </div><br>
+
+        <fieldset>
+            <legend>Φίλτρα</legend>
+
+            <div class="filter-field">
+                <label for="min-price">Τιμή ανά ημέρα από:</label><br>
+                <input type="number" id="min-price" name="min-price" min="0" step="10" value="0">
+                <button id="min-increment">+</button>
+                <button id="min-decrement">-</button><br>
+
+                <label for="max-price">εως:</label><br>
+                <input type="number" id="max-price" name="max-price" max="300" step="10" value="300">
+                <button id="max-increment">+</button>
+                <button id="max-decrement">-</button><br>
+            </div>
+
+            <hr>
+
+            <div class="filter-field">
+                <label>Μάρκα:</label><br>
+                <label>
+                    <input type="checkbox" name="carbrand" id="Toyota">
+                    Toyota
+                </label><br>
+                <label>
+                    <input type="checkbox" name="carbrand" id="Honda">
+                    Honda
+                </label><br>
+                <label>
+                    <input type="checkbox" name="carbrand" id="Ford">
+                    Ford
+                </label><br>
+                <label>
+                    <input type="checkbox" name="carbrand" id="Chevrolet">
+                    Chevrolet
+                </label><br>
+                <label>
+                    <input type="checkbox" name="carbrand" id="BMW">
+                    BMW
+                </label><br>
+            </div>
+
+            <hr>
+
+            <div class="filter-field">
+                <label>Κατηγορία:</label><br>
+                <label>
+                    <input type="checkbox" name="category" id="Small">
+                    Μικρό
+                </label><br>
+                <label>
+                    <input type="checkbox" name="category" id="Medium">
+                    Μεσαίο
+                </label><br>
+                <label>
+                    <input type="checkbox" name="category" id="Large">
+                    Μεγάλο
+                </label><br>
+                <label>
+                    <input type="checkbox" name="category" id="Minivan">
+                    Μίνιβαν
+                </label><br>
+                <label>
+                    <input type="checkbox" name="category" id="SUV">
+                    SUV
+                </label><br><br>
+            </div>
+
+            <button id="clear-button">Clear Selection</button>
+        </fieldset>
+    
+    </form> 
+
+    <ul>
+
+        <li>
+            <div class="deal">
+                <img src="car.png" alt="Car" class="my-car">
+                <div class="deal-info">
+                    <h2>Carname1</h2>
+                    
+                    <div class="not-car-title">
+                        <div class="car-info">
+                            <p>Type: Type A</p>
+                            <p>Auto</p>
+                            <p>No seats</p>
+                        </div>
+
+                        <div class="price-view">
+                            <h3 class="price">111.11 €</h3>
+                            <button class="view-button">View deal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        
+        <li>
+            <div class="deal">
+                <img src="car.png" alt="Car" class="my-car">
+                <div class="deal-info">
+                    <h2>Carname1</h2>
+                    
+                    <div class="not-car-title">
+                        <div class="car-info">
+                            <p>Type: Type A</p>
+                            <p>Auto</p>
+                            <p>No seats</p>
+                        </div>
+
+                        <div class="price-view">
+                            <h3 class="price">111.11 €</h3>
+                            <button class="view-button">View deal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+        
+        <li>
+            <div class="deal">
+                <img src="car.png" alt="Car" class="my-car">
+                <div class="deal-info">
+                    <h2>Carname1</h2>
+                    
+                    <div class="not-car-title">
+                        <div class="car-info">
+                            <p>Type: Type A</p>
+                            <p>Auto</p>
+                            <p>No seats</p>
+                        </div>
+
+                        <div class="price-view">
+                            <h3 class="price">111.11 €</h3>
+                            <button class="view-button">View deal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+
+</body>
+
+</html>
